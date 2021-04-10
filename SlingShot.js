@@ -35,13 +35,13 @@ class SlingShot {
                 image(this.sling3, pointA.x - 30, pointA.y - 10, 15, 30);
             }
         }
-
-
-
-
     }
+
     fly() {
         this.sling.bodyA = null;
     }
 
+    attach(body){
+        this.sling.bodyA = body;
+    }
 }
